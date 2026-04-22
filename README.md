@@ -5,6 +5,7 @@ This repository contains github-pages served on https://go.podman.io/ to enable 
 ## Supported Repositories
 
 - **[buildah](https://github.com/containers/buildah)** - `go.podman.io/buildah`
+- **[podman](https://github.com/containers/podman)** - `go.podman.io/podman/v6`
 - **[skopeo](https://github.com/containers/skopeo)** - `go.podman.io/skopeo`
 - From [container-libs](https://github.com/containers/container-libs):
   - **[common](https://github.com/containers/container-libs/tree/main/common)** - `go.podman.io/common`
