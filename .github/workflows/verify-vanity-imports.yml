@@ -1,0 +1,21 @@
+name: Verify vanity imports
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  go-get:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-go@v6
+        with:
+          go-version: stable
+
+      - name: Serve repo on 127.0.0.1:80 and verify go get
+        run: bash .github/scripts/verify-vanity-imports.sh
